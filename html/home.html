@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <!--------------------------------------------->
+  <!--       Author:Abdul_Latif Zamani         -->
+  <!--------------------------------------------->
+
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bankist</title>
+    <link rel="stylesheet icon" type="image/png" href="../images/icon.png">
+    <link rel="stylesheet" href="../css/bootstrap.min.css">
+    <link rel="stylesheet" href="../css/style.css">
+</head>
+
+<body>
+    <!-- --------Nav_bar----- -->
+    <nav>
+        <p id="welcome">Login-in to get start</p>
+        <img src="../images/logo.png" id="logo">
+        <form id="loginForm" class="form-group ">
+            <input type="text" class="form-control " placeholder="Name" id="userName">
+            <input type="text" class="form-control " placeholder="Pin" id="userPin">
+            <button type="button" class="form-control " class="" id="btnLogin">&rarr;</button>
+        </form>
+    </nav>
+    <!-- --------Main_App----- -->
+
+    <div class="container">
+        <main id="app">
+
+            <div id="balance">
+                <p id="balanceValue">0000€</p>
+                <div>
+                    <p id="balanceLable">Current balance</p><br>
+                    <p id="balanceDate">
+                        As of <span id="balanceDate">2030/1/1</span>
+                    </p>
+                    <b><span id="balanceClock" >00:00:00</span></b>
+                </div>
+            </div>
+            <!-- --------Movements----- -->
+
+            <div>
+                <div id="movement">
+                    <div id="moveRow">
+                        <div id="movType" class="deposit">2 Deposit</div>
+                        <div id="movDate">3 Days Ago</div>
+                        <div id="movValue">3000€</div>
+                    </div>
+                    <div id="moveRow">
+                        <div id="movType" class="withdrawal">1 Withdrawal</div>
+                        <div id="movDate">2023/1/3</div>
+                        <div id="movValue">-1000€</div>
+                    </div>
+                </div>
+
+                <div id="transfer">
+                    <h2>Transfer Money</h2>
+                    <form class="form-group ">
+                        <input class=" input form-control " id="transferTo" type="text">
+                        <input class=" input form-control " id="amount" type="number">
+                        <button id="btnTransfer">&rarr;</button><br>
+                        <label class="TransferLable">Transfer to</label>
+                        <label class="TransferLable_amount">Amount</label>
+                    </form>
+                </div>
+
+                <div id="loan">
+                    <h2>Request Loan</h2>
+                    <form class="form-group ">
+                        <input class=" input form-control " id="loanAmount" type="text">
+                        <button id="btnLoan">&rarr;</button><br>
+                        <label class="TransferLable_amount">Amount</label>
+                    </form>
+                </div>
+
+                <div id="closeAccount">
+                    <h2>Close Account</h2>
+                    <form class="form-group ">
+                        <input class=" input form-control " id="confirmUser" type="text">
+                        <input class=" input form-control " id="confirmPin" type="text">
+                        <button id="btncloseAccount">&rarr;</button><br>
+                        <label class="TransferLable">Confirm User</label>
+                        <label class="TransferLable_amount">Confirm Pin</label>
+                    </form>
+                </div>
+                <div id="logoutTimer">
+                    <p id="logoutText">
+                        You will be loged_out in
+                        <span id="logoutTime">05:00</span>
+                    </p>
+                </div>
+
+            </div>
+            <!-- --------Summary----- -->
+
+            <div id="summary">
+                <div id="summaryLable">In</div>
+                <div id="inValue" class="summaryValues">0000€</div>
+                <div id="summaryLable">Out</div>
+                <div id="outValue" class="summaryValues">0000€</div>
+                <div id="summaryLable">Interest</div>
+                <div id="interestValue" class="summaryValues">0000€</div>
+                <button id="btnSort">&UpArrowDownArrow;Sort</button>
+            </div>
+
+
+
+        </main>
+
+
+        <script src=" ../js/script.js"> </script>
+    </div>
+</body>
+
+</html

@@ -1,0 +1,228 @@
+body {
+    margin: 0px;
+    background-color: aliceblue;
+    height: 120vh;
+}
+
+nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 20px;
+    padding: 0 2rem;
+
+
+}
+
+#welcome {
+    font-size: 1, 2rem;
+    font-weight: 500;
+}
+
+#logo {
+    height: 4rem;
+    margin-left: 10%;
+}
+
+#loginForm {
+    display: flex;
+}
+
+#userPin,
+#userName {
+    margin-left: 5px;
+    width: 8rem;
+    height: 2rem;
+    border-radius: 1rem;
+    text-align: center;
+    margin-top: 10px;
+}
+
+#btnLogin {
+    border: none;
+    background: none;
+    cursor: pointer;
+    font-size: 2rem;
+    margin: 0rem;
+    padding: 0;
+    transition: all 0.3s;
+}
+
+#app {
+    margin: 2rem;
+    display: grid;
+    opacity: 0;
+}
+
+#balanceLable {
+    font-weight: 400;
+    font-size: 1.6rem;
+    display: inline;
+}
+
+#balanceDate {
+    display: inline;
+    color: rgb(100, 185, 15);
+}
+
+#balanceValue {
+    float: right;
+    display: inline;
+    font-size: 2rem;
+}
+
+#movement {
+    background-color: white;
+    overflow-y: scroll;
+    border-radius: 0.5rem;
+    width: 60%;
+    /* height: auto; */
+    height: 80vh;
+    margin-top: 40px;
+    float: left;
+}
+
+#moveRow {
+    background-color: #99d4d2;
+    padding: 1rem 2rem;
+    display: flex;
+    color: white;
+    border-bottom: 3px solid white;
+    align-items: center;
+    justify-content: space-between;
+    /* opacity: 0.5; */
+}
+
+#movType {
+    color: white;
+    border-radius: 2rem;
+    padding: 0 6px;
+    font-size: 0.8rem;
+}
+
+#movDate {
+    color: rgb(255, 255, 255);
+    font-size: 0.8rem;
+}
+
+.deposit {
+    background-image: linear-gradient(rgb(13, 115, 4), green);
+
+}
+
+.withdrawal {
+    background-image: linear-gradient(rgb(192, 8, 8), rgb(212, 31, 11));
+
+}
+
+#movValue {
+    font-size: 1.2rem;
+    /* margin-left: auto; */
+}
+
+#summary {
+    display: flex;
+    /* justify-content: baseline; */
+    align-items: baseline;
+    margin-top: 30px;
+
+}
+
+#summaryLable {
+    margin-left: 30px;
+}
+
+.summaryValues {
+    font-size: 1.2rem;
+    margin-left: 3px;
+}
+
+#btnSort {
+    background: none;
+    border: none;
+    font-size: 1.3rem;
+    margin-left: 2rem;
+    cursor: pointer;
+}
+
+#inValue,
+#interestValue {
+    color: rgb(4, 172, 4);
+}
+
+#outValue {
+    color: red;
+}
+
+#transfer,
+#loan,
+#closeAccount {
+    width: 38%;
+    float: right;
+    border-radius: 10px;
+    padding-left: 1rem;
+    margin-left: 5px;
+
+}
+
+#transfer {
+    background-image: linear-gradient(rgb(244, 28, 28), rgb(175, 5, 5));
+    margin-top: 38px;
+}
+
+#loan {
+    background-image: linear-gradient(rgb(12, 246, 51), rgb(5, 175, 39));
+    margin-top: 15px;
+}
+
+#closeAccount {
+    background-image: linear-gradient(rgb(246, 211, 12), rgb(200, 210, 3));
+    margin-top: 15px;
+}
+
+h2 {
+    font-size: 1.3rem;
+    margin-top: 10px;
+}
+
+.input {
+    width: 30%;
+    display: inline;
+    height: 30px;
+    border-radius: 20px;
+    opacity: 0.5;
+    color: white;
+}
+
+#btnTransfer,#btnLoan,#btncloseAccount {
+    background: none;
+    border: none;
+    color: white;
+    font-size: 2rem;
+    cursor: pointer;
+}
+
+.TransferLable {
+    color: white;
+}
+
+.TransferLable_amount {
+    color: white;
+    margin-left: 30px;
+}
+
+#logoutTimer {
+    margin-right: 15px;
+    margin-top: 50px;
+    float: right;
+
+}
+
+#logoutText {
+    font-size: 1rem;
+}
+
+#logoutTime {
+    font-size: 1rem;
+    font-weight: 500;
+}
